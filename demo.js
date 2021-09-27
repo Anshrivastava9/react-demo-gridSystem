@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Firstgrid from './Firstgrid';
+import Header from './Header';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -15,6 +16,8 @@ export default function ControlledAccordions() {
 
   return (
     <div>
+      <Header />
+
       <Accordion
         expanded={expanded === 'panel1'}
         onChange={handleChange('panel1')}
